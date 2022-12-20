@@ -1,10 +1,10 @@
 import { IonRow,IonCol,IonLabel,IonInput,IonItem,IonContent,IonButton} from "@ionic/react";
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router";
 
 const Login : React.FC = () => {
-    const [email, setEmail] = useState("rakoto@gmail.com");
-    const [password, setPassword] = useState("rakoto1234");
+    const email ="rakoto@gmail.com";
+    const password= "rakoto1234";
     const history  = useHistory();
     const login = async() => { 
         const data = {email: email, mdp: password} 
